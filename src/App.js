@@ -2,11 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MyComp from './MyComp';
+import LiveCompiler from './LiveCompiler';
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <hr/>
         <MyComp />
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

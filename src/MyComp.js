@@ -77,7 +77,7 @@ class MyComp extends React.Component {
   }
 }
 
-const Person = (props) => <h4>{props.person.name}</h4>
+const Person = (props: { person: {name: string}}) => <h4>{props.person.name}</h4>
 
 class Wrapper extends React.Component {
   mount(){
