@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import './App.css';
-import type {InputEvent} from "./FlowUtil";
+//import type {InputEvent} from "./FlowUtil";
 
 class MyComp extends React.Component {
   props: {
@@ -30,9 +30,9 @@ class MyComp extends React.Component {
     this.setState({val : this.state.val + 1});
   }
 
-  updateFilter = (e: InputEvent) => {
+  updateFilter = (e: Event & { currentTarget: HTMLInputElement }) => {
     this.setState({
-      filter: e.target.value
+      filter: e.currentTarget.value
     });
   }
 

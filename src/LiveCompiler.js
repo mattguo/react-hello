@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 //import * as babel from 'babel-core';
-import type {InputEvent} from "./FlowUtil";
+//import type {InputEvent} from "./FlowUtil";
 
 class LiveCompiler extends React.Component{
   state = {
@@ -11,8 +11,8 @@ class LiveCompiler extends React.Component{
     output: ""
   }
 
-  update = (e: InputEvent) => {
-    let code = e.target.value;
+  update = (e: Event & { currentTarget: HTMLInputElement }) => {
+    let code = e.currentTarget.value;
     try{
       this.setState({
         output: window.Babel.transform(code, { presets: ['es2015', 'react']}).code,
