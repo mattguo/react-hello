@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import ReactDom from 'react-dom';
-import './App.css';
+import '../static/App.css';
 //import type {InputEvent} from "./FlowUtil";
 
 class MyComp extends React.Component {

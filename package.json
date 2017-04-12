@@ -6,7 +6,8 @@
     "react": "^15.5.3",
     "react-dom": "^15.5.3",
     "react-redux": "^5.0.2",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "immutable": "^3.8.1"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
